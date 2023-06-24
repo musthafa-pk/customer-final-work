@@ -4,15 +4,21 @@ import 'package:chaavie_customer/views/address_book/recipient_address_page.dart'
 import 'package:chaavie_customer/views/booking/booking_page1.dart';
 import 'package:chaavie_customer/views/first_page.dart';
 import 'package:chaavie_customer/views/home_page.dart';
+import 'package:chaavie_customer/views/login/login_page.dart';
 import 'package:chaavie_customer/views/profile/profile_page.dart';
+import 'package:chaavie_customer/views/splash/oreder_placed_splash.dart';
 import 'package:chaavie_customer/views/testPage.dart';
 import 'package:chaavie_customer/views/transactions_page.dart';
+import 'package:chaavie_customer/views/wallet.dart';
 import 'package:flutter/material.dart';
 
 import '../../views/booking/booking_page2.dart';
 class Routes{
   static Route<dynamic> generateRoute(RouteSettings settings){
     switch (settings.name){
+      case RoutesName.login_page:
+        return MaterialPageRoute(builder: (BuildContext context)=>const LoginPage());
+
       case RoutesName.first_page:
         return MaterialPageRoute(builder: (BuildContext context)=>const PageOne());
 
@@ -36,9 +42,24 @@ class Routes{
 
       case RoutesName.booking_page2:
         return MaterialPageRoute(builder: (BuildContext context)=>const BookingPage2());
+        
+      case RoutesName.wallet:
+        return MaterialPageRoute(builder: (BuildContext context)=> Wallet());
 
       case RoutesName.test:
         return MaterialPageRoute(builder: (BuildContext context)=> const TestPage());
+
+
+
+
+
+
+
+
+        
+        //splashscreens
+      case RoutesName.order_placed_splash:
+        return MaterialPageRoute(builder: (BuildContext context)=>const OrderPlacedSplash());
 
 
       default:

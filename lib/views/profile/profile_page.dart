@@ -178,33 +178,41 @@ class _Profile_PageState extends State<Profile_Page> {
                         ],
                       ),
                     ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: AppColors.buttonsColor,width: 1),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children:[
-                          Text('WALLET',style: TextStyle(
-                            fontFamily: 'Argentum Sans',
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.buttonsColor,
-                            fontSize: 14.sp,
-                          ),),
-                          Text('₹',style: TextStyle(
-                            fontFamily: 'Argentum Sans',
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.buttonsColor,
-                            fontSize: 14.sp,
-                          ),),
-                          Text('1234',style: TextStyle(
+                    InkWell(
+                      onTap: (){
+                        Navigator.pushNamed(context, RoutesName.wallet);
+                      },
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: AppColors.buttonsColor,width: 1),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children:[
+                            Text('WALLET',style: TextStyle(
+                              fontFamily: 'Argentum Sans',
+                              fontWeight: FontWeight.w500,
                               color: AppColors.buttonsColor,
-                              fontWeight: FontWeight.w600,fontSize: 25.sp
-                          ),)
-                        ],
+                              fontSize: 14.sp,
+                            ),),
+                            Text('₹',style: TextStyle(
+                              fontFamily: 'Argentum Sans',
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.buttonsColor,
+                              fontSize: 14.sp,
+                            ),),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text('1234',style: TextStyle(
+                                  color: AppColors.buttonsColor,
+                                  fontWeight: FontWeight.w600,fontSize: 25.sp
+                              ),),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Container(
@@ -234,7 +242,7 @@ class _Profile_PageState extends State<Profile_Page> {
                   ],
                 ),
 
-                SizedBox(height: 50,),
+                SizedBox(height:2.h,),
 
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -317,7 +325,27 @@ class _Profile_PageState extends State<Profile_Page> {
                         ),)),
                       ),
                     ),
-                    SizedBox(height: 3.h,)
+                    SizedBox(height: 3.h,),
+                    InkWell(
+                      onTap: (){
+
+                      },
+                      child: Container(
+                        width: 300,
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 1,color: AppColors.buttonsColor),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Center(child: Text('SIGN OUT',style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.buttonsColor,
+                          ),)),
+                        ),
+                      ),
+                    ),
+
                   ],
                 )
               ],

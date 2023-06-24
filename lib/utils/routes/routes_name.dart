@@ -1,4 +1,8 @@
 class RoutesName{
+  static const String login_page = 'login page';
+
+  static const String register_page = 'register page';
+
   static const String first_page = 'fist page';
 
   static const String home_page  = 'home page';
@@ -15,9 +19,23 @@ class RoutesName{
 
   static const String booking_page2 = 'booking page2';
 
+  static const String addMyAddress  = 'Add My Address Page';
+
+  static const String wallet        = 'wallet page';
+
 
   static const String test = 'test page';
 
 
+
+
+
+
+
+
+
+  //splash screens
+
+static const String order_placed_splash = 'order placed splash';
 
 }

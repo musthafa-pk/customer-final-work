@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Argentum Sans'
             ),
             debugShowCheckedModeBanner: false,
-            initialRoute: RoutesName.test,
+            initialRoute: RoutesName.login_page,
             onGenerateRoute: Routes.generateRoute,
           ),
         );

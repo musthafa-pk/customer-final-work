@@ -50,6 +50,9 @@ dependencies:
   open_mail_app: ^0.4.5
   intl: ^0.18.1
   carousel_slider: ^4.2.1
+  google_sign_in: ^6.1.4
+  google_fonts:
+  loading_animation_widget: ^1.2.0+4
 
 
 
@@ -100,6 +103,9 @@ flutter:
     - assets/images/mediumman.png
     - assets/images/extralarge man.png
     - assets/images/user-photo.png
+    - assets/images/google.png
+    - assets/images/group-1.png
+    - assets/lottie/89260-key-login.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
