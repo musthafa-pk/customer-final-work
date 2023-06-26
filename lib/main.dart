@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Argentum Sans'
             ),
             debugShowCheckedModeBanner: false,
-            initialRoute: RoutesName.login_page,
+            initialRoute: RoutesName.chatgpt,
             onGenerateRoute: Routes.generateRoute,
           ),
         );

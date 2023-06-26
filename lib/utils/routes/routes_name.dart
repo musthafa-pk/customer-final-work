@@ -24,6 +24,8 @@ class RoutesName{
   static const String wallet        = 'wallet page';
 
 
+
+  static const String chatgpt         = 'chatgpt';
   static const String test = 'test page';
 
 

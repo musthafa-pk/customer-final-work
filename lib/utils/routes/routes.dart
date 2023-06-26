@@ -13,6 +13,7 @@ import 'package:chaavie_customer/views/wallet.dart';
 import 'package:flutter/material.dart';
 
 import '../../views/booking/booking_page2.dart';
+import '../../views/bookingpage222.dart';
 class Routes{
   static Route<dynamic> generateRoute(RouteSettings settings){
     switch (settings.name){
@@ -48,6 +49,8 @@ class Routes{
 
       case RoutesName.test:
         return MaterialPageRoute(builder: (BuildContext context)=> const TestPage());
+      case RoutesName.chatgpt:
+        return MaterialPageRoute(builder: (BuildContext context)=>BookingPage222());
 
 
 
